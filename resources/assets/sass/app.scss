@@ -1,9 +1,122 @@
+// colors
+$purple: #41203F;
+$lilac: #9c27b0;
+$gray: #7f7f7f;
+$gray-clean: #666666;
 
-// Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+// sprite
+/*$background-sprite: url('../img/sprite.png') no-repeat;
+@mixin sprite($x, $y) {
+    background: $background-sprite;
+    background-position: $x $y;
+}*/
 
-// Variables
-@import "variables";
+// center
+#outer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
 
-// Bootstrap
-@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+#outer[id] {
+    width: 100%;
+    display: table;
+    position: static;
+}
+
+#middle {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+}
+
+#middle[id] {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    position: static;
+}
+
+#middle[id] #inner {
+    width: 100%;
+    position: relative;
+    top: -50%
+}
+
+h2, h3 {
+    color: $lilac;
+}
+
+section, article {
+    margin: 50px 0;
+}
+
+pre {
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}
+
+pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background-color: $purple;
+    padding: 20px 0;
+    img {
+        width: 100%;
+        height: auto;
+    }
+    a, a:hover {
+        width: auto;
+        height: auto;
+        text-decoration: none;
+        h1 {
+            width: auto;
+            height: auto;
+            font-size: 26px;
+        }
+    }
+}
+
+.require {
+    h3 {
+        font-size: 20px;
+    }
+}
+
+.preview-next {
+    a {
+        color: $lilac;
+    }
+}
+
+#itens {
+    width: auto;
+    height: auto;
+    a {
+        width: auto;
+        height: auto;
+        font-size: 20px;
+        color: $gray;
+    }
+    a:hover {
+        color: $lilac;
+        font-weight: bold;
+        text-decoration: none;
+    }
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+}
+
