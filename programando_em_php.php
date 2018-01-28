@@ -1,8 +1,5 @@
-@extends('layout')
+<?php include("header.php"); ?>
 
-@section('title', 'Home')
-
-@section('content')
     <section class="require">
         <div class="container">
             <div class="row justify-content-md-center">
@@ -21,7 +18,7 @@
                         <li class="list-group-item">
                             <h3>PHP instalado</h3>
                             <p>
-                                Caso você ainda não tenha pode seguir os passos deste <a href="/instalacao_php">tutorial</a>
+                                Caso você ainda não tenha pode seguir os passos deste <a href="instalacao.php">tutorial</a>
                             </p>
                         </li>
 
@@ -491,10 +488,11 @@
         <div class="container">
             <div class="row justify-content-md-center">
                 <div class="col col-md-8">
-                    <a href="/instalacao_php" class="float-left" title="volta">voltar</a>
-                    <a href="/aplicativo_to_do" class="float-right" title="próximo">próximo</a>
+                    <a href="instalacao.php" class="float-left" title="volta">voltar</a>
+                    <a href="aplicativo_to_do.php" class="float-right" title="próximo">próximo</a>
                 </div><!-- .col -->
             </div><!-- .row -->
         </div><!-- .container -->
     </section>
-@endsection
+
+<?php include("footer.php"); ?>
