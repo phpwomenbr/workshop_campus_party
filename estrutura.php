@@ -50,7 +50,47 @@
         </div><!-- .container -->
     </section>
 
+    <article>
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col col-md-8">
+                    <h2>Git</h2>
 
+                    <p>
+                        O Git é um sistema de versionamento de arquivos que os programadores utilizam para versinarem seus códigos.
+                        Dessa forma, vários programadores podem trabalhar em um mesmo projeto sem o medo de um código sobrescrever o
+                        outro já que todas as alterações são identificadas e vocêé avisado quando surgem conflitos(quando uma mesma linha foi alterada).
+                    </p>
+
+                    <p>
+                        Nós vamos utilizar o Git para versionarmos o código e também para hospeda-lo gratuitamente no Github(falaremos dele a seguir),
+                        então <a href="https://git-scm.com/downloads" title="" target="_blank">clique aqui</a> para ir para a página de Download
+                        e siga as instruções de instalação do seu Sistema Operacional.
+                    </p>
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </article>
+
+    <article>
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col col-md-8">
+                    <h2>Github</h2>
+
+                    <p>
+                        O Github é um serviço web que oferece várias funcinalidades ao Git. Fazendo uma conta no site você pode hospedar 
+                        os seus códigos de forma gratuíta e pública, além de poder contribuir com vários projetos que estã lá.
+                    </p>
+
+                    <p>
+                        Você vai utilizar o Github para dar um 'fork'(clonar) a estrutura do projeto que vamos desenvolver que está no 
+                        Github do PHPWOmenBR, então caso ainda não tenha uma conta você pode criar uma <a href="https://github.com/">clicando aqui</a>
+                    </p>
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </article>
 
     <section class="preview-next">
         <div class="container">
