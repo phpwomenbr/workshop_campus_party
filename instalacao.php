@@ -98,6 +98,8 @@
                     <p>
                         Dessa forma ao acessar o endereço 'localhost:8080' em seu navegador sua página será mostrada.
                     </p>
+
+                    <img src="img/img-tela-1.png" class="img-fluid" title="Imagem do navegador mostrando as informações do PHP" alt="Imagem do navegador mostrando as informações do PHP">
                 </div><!-- .col -->
             </div><!-- .row -->
         </div><!-- .container -->

@@ -47,12 +47,12 @@
         <div class="container">
             <div class="row justify-content-md-center">
                 <div class="col col-md-8">
-                    <h2>O PHP</h2>
+                    <h2>GIT</h2>
 
                     <p>
-                        O PHP (uma abreviação para PHP: Hypertext Preprocessor) 
-                        é uma linguagem de programação bastante utilizada 
-                        no desenvolvimento web e que podemos embutir no HTML.               
+                        O Git é uma ferramenta utilizada pelos programadores para controlar a versão do código, 
+                        com isso, é possível que vários programadores possam contribuir ao mesmo tempo no projeto 
+                        sem o risco de um código sobresquever o outro.              
                     </p>
 
                     <p>
@@ -244,6 +244,8 @@
                     <pre>
                         <code>
                         &lt;?php
+                            $coresFavoritas = ["Amarelo", "Azul", "Roxo"];
+
                             echo $coresFavoritas[0]; // deve mostrar Amarelo
                             echo $coresFavoritas[1]; // deve mostrar Azul
                         </code>
@@ -254,6 +256,23 @@
                        Está posição nós chamamos de índice e repare que a contagem sempre começa no 
                        <strong>0</strong> e não no <strong>1</strong>.
                     </p>
+
+                    <p>
+                       Você pode ter notado que as palavras 'Amarelo' e 'Azul' foram mostradas juntas no navegador.<br>
+                       Para dizer ao navegador que ele deve quebrar uma linha entre as palavras podemos usar uma tag HTML chamada
+                       <strong>&lt;br&gt;</strong> entre " " no final da função <strong>echo</strong> precedido de <strong>.</strong> 
+                       que no PHP faz a concatenação do valor da variável mais a tag <strong>&lt;br&gt;</strong>.
+                    </p>
+
+                    <pre>
+                        <code>
+                        &lt;?php
+                            $coresFavoritas = ["Amarelo", "Azul", "Roxo"];
+
+                            echo $coresFavoritas[0]."&lt;br&gt;"; // deve mostrar Amarelo
+                            echo $coresFavoritas[1]; // deve mostrar Azul
+                        </code>
+                    </pre>
 
                     <p>
                        Nós também podemos criar nosso próprios índices e nesse caso chamamos de <strong>array associativo</strong>,
@@ -346,7 +365,7 @@
 
                             if ($idade > 17) {
                                 echo "Você já maior de idade!";
-                            } else if ($idade <= 17 && $idade >= 10)
+                            } else if ($idade <= 17 && $idade >= 10) {
                                 echo "Você é um adolecente!";
                             } else {
                                 echo "Você não é maior de idade!";
@@ -394,9 +413,9 @@
                         &lt;?php
                             $numero = 0;
 
-                            while ($numero < 10) {
+                            while ($numero <= 10) {
+                                echo $numero."&lt;br&gt;";
                                 $numero = $numero + 1;
-                                echo $numero;
                             }
                         </code>
                     </pre>
@@ -413,8 +432,8 @@
                     <pre>
                         <code>
                         &lt;?php
-                            for ($numero = 0; $numero < 10; $numero++) {
-                                echo $numero;
+                            for ($numero = 0; $numero <= 10; $numero++) {
+                                echo $numero."&lt;br&gt;";
                             }
                         </code>
                     </pre>
@@ -422,7 +441,8 @@
                     <p>
                        A diferença do <strong>for</strong> para o <strong>while</strong> é que a soma da variável $numero é 
                        feita diretamente dentro do <strong>for</strong>.
-                       Com o tempo você verá que as vezes é melhor utilizar o <strong>for</strong> para algumas situações ou o <strong>while</strong>.
+                       Com o tempo você verá que as vezes é melhor utilizar o <strong>for</strong> para algumas situações
+                        ou o <strong>while</strong>.<br>
                        Repare também que a expressão <strong>$numero++</strong> do <strong>for</strong> nada mais é que a expressão 
                        <strong>$numero = $numero + 1</strong> do <strong>while</strong> reduzida.
                     </p>
@@ -438,7 +458,7 @@
                             $cores = ["Amarelo", "Azul", "Roxo"];
 
                             foreach ($cores as $cor) {
-                                echo $cor;
+                                echo $cor."&lt;br&gt;";
                             }
                         </code>
                     </pre>
@@ -468,9 +488,9 @@
                                 return $resultado;
                             }
 
-                            echo somaDeNumeros(1, 2); // deve mostrar o resultdo da soma
-                            echo somaDeNumeros(12, 2); // deve mostrar o resultdo da soma
-                            echo somaDeNumeros(12, 34); // deve mostrar o resultdo da soma
+                            echo somaDeNumeros(1, 2)."&lt;br&gt;";
+                            echo somaDeNumeros(12, 2)."&lt;br&gt;";
+                            echo somaDeNumeros(12, 34)."&lt;br&gt;";
                         </code>
                     </pre>
 
@@ -489,7 +509,7 @@
             <div class="row justify-content-md-center">
                 <div class="col col-md-8">
                     <a href="instalacao.php" class="float-left" title="volta">voltar</a>
-                    <a href="aplicativo_to_do.php" class="float-right" title="próximo">próximo</a>
+                    <a href="estrutura.php" class="float-right" title="próximo">próximo</a>
                 </div><!-- .col -->
             </div><!-- .row -->
         </div><!-- .container -->
