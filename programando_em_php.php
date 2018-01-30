@@ -52,13 +52,9 @@
                     <p>
                         O Git é uma ferramenta utilizada pelos programadores para controlar a versão do código, 
                         com isso, é possível que vários programadores possam contribuir ao mesmo tempo no projeto 
-                        sem o risco de um código sobresquever o outro.              
-                    </p>
-
-                    <p>
-                        Quando uma página web é requisitada ao servidor, 
-                        ele procura essa página dentro do seu sistema de arquivos e se ela for PHP 
-                        ele chama o PHP que vai interpretar o que foi escrito e vai devolver a página ao servidor.              
+                        sem o risco de um código sobresquever o outro.<br>
+                        Nós vamos utilizar o Git para controlar a versão do nosso código e também para poder hospedar 
+                        o seu código         
                     </p>
 
                     <p>
