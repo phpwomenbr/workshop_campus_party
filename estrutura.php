@@ -173,6 +173,67 @@
                             <li><a href="http://www.maiconschmitz.com.br/blog/2015/03/04/instalando-composer-no-mac-os-x/" title="Instalar composer no Mac" target="_blank">Mac</a></li>
                         </ul>
                     </p>
+
+                    <p>
+                        Com o Composer instalado, vá para o terminal, verifique se está na pasta do projeto que você clonou(caso não 
+                        esteja navegue até a pasta pelo terminal) e execute o comando:
+                    </p>
+
+                    <pre>
+                        <code>
+                        composer install
+                        </code>
+                    </pre>
+
+                    <p>
+                        Executando esse comando o Composer vai ler o arquivo 'composer.json' que está no projeto e vai instalar todas 
+                        as bibliotecas de terceiros que o arquivo diz que o projeto precisa.
+                    </p>
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </article>
+
+    <article>
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col col-md-8">
+                    <h2>Estrutura de pastas</h2>
+
+                    <p>
+                        Abra a pasta do seu projeto ou, se preferir, de um comando no terminal para listar as pastas. <br>
+                        Você verá que existe uma estrutura de pastas e alguns arquivos. Essa estrutura é o que normalmente seguimos 
+                        quando vamos desenlvover um projeto em PHP.
+
+                        <ul>
+                            <li>
+                                Pasta config: Nesta pasta colocamos os arquivos PHP relacionados a configuração do projeto como, 
+                                por exemplo, o arquivo PHP com as informaçõe para conectar ao banco de dados;
+                            </li>
+
+                            <li>
+                                Pasta public: É a pasta de acesso publico do projeto. Por motivos de segurança, quando o servidor 
+                                acessar a aplicação ele terá acesso a pasta public, onde terá um arquivo index.php 
+                                que vai carregar os demais arquivos do projeto que estão fora da pasta, com isso, o código e os 
+                                dados senssíveis, como acesso ao banco de dados, ficam protegidos.(arquivos de css, js e img costumam ficar 
+                                aqui também);
+                            </li>
+
+                            <li>
+                                Pasta resource: ;
+                            </li>
+
+                            <li>
+                                Pasta src: É onde ficam todos os arquivos que cuidam da lógica da aplicação, que vão consultar o banco de dados,
+                                vão tratar os dados e mostrar os dados;
+                            </li>
+
+                            <li>
+                                Pasta vendor: A pasta onde o Composer instala as dependecias do projeto, ou seja, onde ele instala as 
+                                bibliotecas de terceiros;
+                            </li>
+                        </ul>
+                    </p>
                 </div><!-- .col -->
             </div><!-- .row -->
         </div><!-- .container -->
@@ -182,7 +243,7 @@
         <div class="container">
             <div class="row justify-content-md-center">
                 <div class="col col-md-8">
-                    <a href="instalacao.php" class="float-left" title="volta">voltar</a>
+                    <a href="programacao_php.php" class="float-left" title="volta">voltar</a>
                     <a href="aplicativo_to_do.php" class="float-right" title="próximo">próximo</a>
                 </div><!-- .col -->
             </div><!-- .row -->

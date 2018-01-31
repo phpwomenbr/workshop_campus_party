@@ -47,14 +47,12 @@
         <div class="container">
             <div class="row justify-content-md-center">
                 <div class="col col-md-8">
-                    <h2>GIT</h2>
+                    <h2>O PHP</h2>
 
                     <p>
-                        O Git é uma ferramenta utilizada pelos programadores para controlar a versão do código, 
-                        com isso, é possível que vários programadores possam contribuir ao mesmo tempo no projeto 
-                        sem o risco de um código sobresquever o outro.<br>
-                        Nós vamos utilizar o Git para controlar a versão do nosso código e também para poder hospedar 
-                        o seu código         
+                        O PHP (uma abreviação para PHP: Hypertext Preprocessor) 
+                        é uma linguagem de programação bastante utilizada 
+                        no desenvolvimento web e que podemos embutir no HTML.    
                     </p>
 
                     <p>
