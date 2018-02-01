@@ -7,8 +7,8 @@
                     <h2>Introdução</h2>
 
                     <p>
-                        Neste Workshop você você irá aprender sobre os conceitos básicos da linguagem PHP
-                        e no final você terá uma aplicação TO-DO.                    
+                        Neste Workshop você iremos passar pelos conceitos básicos da linguagem até 
+                        como é o desenvolvimento de uma aplicação em PHP.                   
                     </p>
                 </div><!-- .col -->
             </div><!-- .row -->
@@ -29,32 +29,26 @@
                         </li>
 
                         <li class="list-group-item">
-                            <a href="estrutura.php" class="d-block" title="Estruturando o seu projeto">
-                                3 - Estruturando o seu projeto
-                            </a>
-                        </li>
-
-                        <li class="list-group-item">
-                            <a href="aplicativo_to_do.php" class="d-block" title="Aplicativo TO-DO">
-                                4 - Aplicativo TO-DO
-                            </a>
-                        </li>
-
-                        <li class="list-group-item">
                             <a href="orientacao_a_objetos.php" class="d-block" title="Introdiução a Orientação a Objetos">
-                                5 - Introdução a Orientação a Objetos
+                                3 - Introdução a Orientação a Objetos
                             </a>
                         </li>
 
                         <li class="list-group-item">
                             <a href="banco_de_dados.php" class="d-block" title="Banco de dados">
-                                6 - Banco de dados
+                                4 - Banco de dados
                             </a>
                         </li>
 
                         <li class="list-group-item">
-                            <a href="extras.php" class="d-block" title="Extras">
-                                7 - Extras
+                            <a href="estrutura.php" class="d-block" title="Estruturando o seu projeto">
+                                5 - Estruturando o projeto
+                            </a>
+                        </li>
+
+                        <li class="list-group-item">
+                            <a href="estrutura.php" class="d-block" title="Estruturando o seu projeto">
+                                6 - Entendendo a aplicação
                             </a>
                         </li>
                     </ul>

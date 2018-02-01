@@ -94,8 +94,8 @@
 
                     <p>
                         Vamos fazer nosso primeiro código PHP. </br>
-                        Abra no seu editor de código a página index.php que fizemos no capitulo anterior.
-                        Agora apague o código anterior e coloque o código abaixo:
+                        Abra no seu editor de código a página index.php, apague o código anterior 
+                        e coloque o código abaixo:
                     </p>
 
                     <pre>
@@ -107,7 +107,8 @@
                     </pre>
 
                     <p>
-                        Salve o seu arquivo e atualize a sua página no navegador. Provavelmente você verá o seu primeiro
+                        Salve o seu arquivo e atualize a sua página no navegador. <br> 
+                        Provavelmente você verá o seu primeiro
                         "Hello World".
                     </p>
 
@@ -503,7 +504,7 @@
             <div class="row justify-content-md-center">
                 <div class="col col-md-8">
                     <a href="instalacao.php" class="float-left" title="volta">voltar</a>
-                    <a href="estrutura.php" class="float-right" title="próximo">próximo</a>
+                    <a href="orientacao_a_objetos.php" class="float-right" title="próximo">próximo</a>
                 </div><!-- .col -->
             </div><!-- .row -->
         </div><!-- .container -->

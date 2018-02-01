@@ -43,7 +43,7 @@
                     <h2>Instalando o PHP</h2>
 
                     <p>
-                       Separamos alguns tutoriais de instalação do PHP para os sistemas Windows, Linux
+                       Separamos alguns tutoriais de instalação do PHP para os Sistemas Operacionais Windows, Linux
                        e Mac: 
 
                        <ul class="list-unstyled">
@@ -66,7 +66,7 @@
                     <p>
                         Com o PHP instalado vamos organizar o nosso projeto inicial para os próximos passos.</br>
                         Crie uma pasta com o nome 'workshop_php' em algum local do seu computador,
-                        abra o seu terminal, de acordo com o seu sistema operacional, e navegue até a pasta que você criou.</br>
+                        abra o seu terminal, de acordo com o seu Sistema Operacional e navegue até a pasta que você criou. 
                         Uma vez na pasta, crie um arquivo chamado index.php, abra-o com o seu editor de código e digite o código a seguir:   
                     </p>
 
@@ -84,8 +84,8 @@
                     </p>
 
                     <p>
-                        Para acessar a nossa aplicação temos que iniciar o servidor que vem junto com o PHP. O servidor é que vai
-                        insterpretar o código em PHP, transforma-lo em HTML e mostrar o resultado no navegador.</br>
+                        Para acessar a nossa aplicação temos que iniciar o servidor que vem junto com o PHP. O servidor é quem irá
+                        interpretar o código PHP, transforma-lo em HTML e mostrar o resultado no navegador.</br>
                         Para isso digite em seu terminal o comando abaixo:
                     </p>
 

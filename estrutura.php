@@ -44,6 +44,13 @@
                                 Caso você ainda não saiba pode seguir este <a href="programando_em_php.php">tutorial</a>
                             </p>
                         </li>
+
+                        <li class="list-group-item">
+                            <h3>Básico de Orientação a Objetos</h3>
+                            <p>
+                                Caso você ainda não saiba pode seguir este <a href="orientacao_a_objetos.php">tutorial</a>
+                            </p>
+                        </li>
                     </ul>
                 </div><!-- .col -->
             </div><!-- .row -->
@@ -205,27 +212,53 @@
                         Você verá que existe uma estrutura de pastas e alguns arquivos. Essa estrutura é o que normalmente seguimos 
                         quando vamos desenlvover um projeto em PHP.
 
+                    <pre>
+                        <code>
+                        TO-DO/
+                        ├── config/
+                        │   └── config.php
+                        ├── public/
+                        │   ├── bootstrap.js
+                        │   └── index.php
+                        │── resources/
+                        │   └── tempaltes/
+                        │       ├── list.html
+                        │       ├── edit.html
+                        │       └── create.html
+                        │── src/
+                        │   ├── Controller/
+                        │   │    └── Task.php
+                        │   ├── Model/
+                        │   |   └── Task.php
+                        │   └── Repository/
+                        │        └── Task.php
+                        └── vendor/
+                        </code>
+                    </pre>
+
                         <ul>
                             <li>
-                                Pasta config: Nesta pasta colocamos os arquivos PHP relacionados a configuração do projeto como, 
-                                por exemplo, o arquivo PHP com as informaçõe para conectar ao banco de dados;
+                                Pasta config: Nesta pasta colocamos os arquivos PHP relacionados a configuração do projeto e, 
+                                no nosso caso, temos o arquivo config.php onde estão os dados para conexão com o banco de dados.
                             </li>
 
                             <li>
-                                Pasta public: É a pasta de acesso publico do projeto. Por motivos de segurança, quando o servidor 
-                                acessar a aplicação ele terá acesso a pasta public, onde terá um arquivo index.php 
-                                que vai carregar os demais arquivos do projeto que estão fora da pasta, com isso, o código e os 
+                                Pasta public: É a pasta de acesso publico do projeto. <br> 
+                                Por motivos de segurança, quando o servidor 
+                                acessar a aplicação ele terá acesso a pasta public, onde tem um arquivo index.php 
+                                que vai carregar os demais arquivos do projeto que estão fora da pasta. Com isso, o código e os 
                                 dados senssíveis, como acesso ao banco de dados, ficam protegidos.(arquivos de css, js e img costumam ficar 
                                 aqui também);
                             </li>
 
                             <li>
-                                Pasta resource: ;
+                                Pasta resource: onde colocarmos geralmente os arquivos que não são .php e, no nosso caso, 
+                                estão os arquivos HTML.
                             </li>
 
                             <li>
-                                Pasta src: É onde ficam todos os arquivos que cuidam da lógica da aplicação, que vão consultar o banco de dados,
-                                vão tratar os dados e mostrar os dados;
+                                Pasta src: É onde ficam todos os arquivos que cuidam da lógica da aplicação, ou seja, o nosso MVC
+                                (veremos o que é MVC a seguir).
                             </li>
 
                             <li>
@@ -233,6 +266,40 @@
                                 bibliotecas de terceiros;
                             </li>
                         </ul>
+                    </p>
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </article>
+
+    <article>
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col col-md-8">
+                    <h2>MVC</h2>
+
+                    <p>
+                        Com a estrutura do projeto pronta vamos entender um pouco sobre MVC(Model, View e Controller).<br> 
+                        O MVC é um padrão de arquitetura de software, ou seja, é um modo de separamos e estruturamos o código da nossa 
+                        aplicação e no caso do MVC nós separamos o código em Models, Views e Controllers.
+                    </p>
+
+                    <p>
+                        Os Models são os arquivos que contém as nossas entidades, ou seja, as classes da nossa aplicação como, 
+                        por exemplo, a classe Tarefa da nossa aplicação TO-DO, e também fica toda a lógica de manipularmos os dados 
+                        dos objetos dessa classe no banco de dados.
+                    </p>
+
+                    <p>
+                        As Views são os arquivos que cuidam da apresentação dos dados. No caso da nossa aplicação TO-DO, vamos imaginar 
+                        que queremos ver uma tarefa, o Model Tarefa vai buscar essa tarefa no banco de dados e a View mostrar_tarefa vai 
+                        mostrar esses dados na tela junto com o HTML.
+                    </p>
+
+                    <p>
+                        Então temos o Model que manipula os dados do objeto do tipo Tarefa, a View que mostra e por fim temos o Controller.<br> 
+                        O que o Controller faz é a comunicação entre o Model e a View. É ele o responsável de pedir para o Model o que ele quer 
+                        que ele faça e de passar os dados para a View correta.
                     </p>
                 </div><!-- .col -->
             </div><!-- .row -->
