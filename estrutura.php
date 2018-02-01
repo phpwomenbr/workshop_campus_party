@@ -64,13 +64,13 @@
                     <h2>Git</h2>
 
                     <p>
-                        O Git é um sistema de versionamento de arquivos que os programadores utilizam para versinarem seus códigos.
+                        O Git é um sistema de versionamento de arquivos que os programadores utilizam para versionarem seus códigos.
                         Dessa forma, vários programadores podem trabalhar em um mesmo projeto sem o medo de um código sobrescrever o
-                        outro já que todas as alterações são identificadas e vocêé avisado quando surgem conflitos(quando uma mesma linha foi alterada).
+                        outro já que todas as alterações são identificadas e você é avisado quando surgem conflitos (quando uma mesma linha foi alterada).
                     </p>
 
                     <p>
-                        Nós vamos utilizar o Git para versionarmos o código e também para hospeda-lo gratuitamente no Github(falaremos dele a seguir),
+                        Nós vamos utilizar o Git para versionarmos o código e também para hospedá-lo gratuitamente no Github (falaremos dele a seguir),
                         então <a href="https://git-scm.com/downloads" title="" target="_blank">clique aqui</a> para ir para a página de Download
                         e siga as instruções de instalação do seu Sistema Operacional.
                     </p>
@@ -86,13 +86,13 @@
                     <h2>Github</h2>
 
                     <p>
-                        O Github é um serviço web que oferece várias funcinalidades ao Git. Fazendo uma conta no site você pode hospedar 
-                        os seus códigos de forma gratuíta e pública, além de poder contribuir com vários projetos que estão lá.
+                        O Github é um serviço web que oferece várias funcionalidades ao Git. Fazendo uma conta no site você pode hospedar
+                        os seus códigos de forma gratuita e pública, além de poder contribuir com vários projetos que estão lá.
                     </p>
 
                     <p>
-                        Em nosso caso nós vamos utilzar o Github para dar um 'fork'(clonar) a estrutura do projeto que vamos desenvolver 
-                        que está no hospedado no Github do PHPWomenBR, para isso você precisa logar no Github
+                        Em nosso caso, vamos utilzar o Github para dar um 'fork' (clonar) a estrutura do projeto que vamos desenvolver
+                        que está no hospedado no Github do PHPWomenBR. Para isso você precisa logar no Github
                         (caso ainda não tenha uma conta você pode criar uma 
                         <a href="https://github.com/" title="Login do Github" target="_blank">clicando aqui</a>) 
                         e então seguir os passos abaixo:
@@ -101,45 +101,45 @@
                             <li>
                                 Uma vez logado no site 
                                 <a href="https://github.com/phpwomenbr/workshop_campus_party" title="Projeto exemplo Github" target="_blank">clique aqui</a> 
-                                para abrir o repositório(é assim que chamamos o local onde o código está hospedadp) com a estrutura 
+                                para abrir o repositório (é assim que chamamos o local onde o código está hospedado) com a estrutura
                                 que vamos utilizar;
                             </li>
 
                             <li>
-                                No canto direito superior do site verifique se vocês está logada(se sua foto e seu nome aparecem) e se sim, 
-                                logo mais abaixo está o botão de 'Fork', no qual, você deve clicar para que o projeto seja clonado para o seu Github;
+                                No canto direito superior do site verifique se você está logad@ (se sua foto e seu nome aparecem) e se sim,
+                                logo mais abaixo está o botão de 'Fork', no qual você deve clicar para que o projeto seja clonado para o seu Github;
                             </li>
                         </ul>
                     </p>
 
                     <p>
-                        Com o projeto em seu repositório vamos agora fazer o download dele em seu computador para que possamos programar:
+                        Com o projeto já em seu repositório vamos fazer o download dele em seu computador para que possamos programar:
 
                         <ul>
                             <li>
-                                No Github clique na sua foto(no canto esquerdo acima) e quando o menu abrir clique em 'Your profile';
+                                No Github clique na sua foto (no canto direito acima) e quando o menu abrir clique em 'Your profile';
                             </li>
 
                             <li>
-                                Uma vez que você está no 'Your profile' procure por 'Repositories' e clique nele;
+                                Uma vez que você está em 'Your profile' procure por 'Repositories' e clique nele;
                             </li>
 
                             <li>
-                                Ao clicar em 'Repositories' você verá todos os repositórios que você tem hospedado no Github 
-                                incluindo o que você clonou do PHPWomenBR. Uma vez que você achou o repositório que você clonou 
-                                do PHPWomenBR clique nele;
+                                Ao clicar em 'Repositories' você verá todos os repositórios que você tem hospedado no Github,
+                                incluindo o que você clonou do PHPWomenBR. Ache o repositório que você clonou
+                                do PHPWomenBR e clique nele;
                             </li>
 
                             <li>
-                                Ao clicar em no repositório você verá a estrutura de pastas do projeto e outras opções. O que vamos 
-                                fazer é clicar no botão verde que fica no canto esquerdo escrito 'clone or download' e copiar a url 
+                                Ao clicar no repositório você verá a estrutura de pastas do projeto e outras opções. O que vamos
+                                fazer é clicar no botão verde que fica no canto direito escrito 'clone or download' e copiar a url
                                 que aparecer;
                             </li>
                         </ul>
                     </p>
 
                     <p>
-                        Com a url copiada agora vamos para o terminal do seu Sistema Operacional para clonar o projeto em nosso computador. 
+                        Com a url copiada, vamos para o terminal do seu Sistema Operacional para clonar o projeto em seu computador.
                         Então abra o terminal e navegue até a pasta onde você deseja clonar o seu projeto e execute o comando abaixo:
                     </p>
 
@@ -165,13 +165,13 @@
                     <h2>Composer</h2>
 
                     <p>
-                        O Composer é uma ferramenta de gerenciamento de dependecias(bibliotecas de conjunto de código) 
-                        para o PHP que nos permite utilizar várias bibliotecas de terceiros em nosso projetos como, por exemplo, 
+                        O Composer é uma ferramenta de gerenciamento de dependências (bibliotecas de conjunto de código)
+                        para o PHP que nos permite utilizar várias bibliotecas de terceiros em nosso projetos. Por exemplo,
                         se precisarmos fazer o login de um usuário podemos adicionar uma biblioteca de terceiros ao nosso projeto atraves do composer.
                     </p>
 
                     <p>
-                        Nós vamos utilizar o composer para gerenciar as dependencias do nosso projeto, então segue abaixo os tutorias de instalação 
+                        Nós vamos utilizar o composer para gerenciar as dependências do nosso projeto, então segue abaixo os tutorias de instalação
                         do composer para cada sistema operacional:
 
                         <ul class="list-unstyled">
@@ -182,8 +182,8 @@
                     </p>
 
                     <p>
-                        Com o Composer instalado, vá para o terminal, verifique se está na pasta do projeto que você clonou(caso não 
-                        esteja navegue até a pasta pelo terminal) e execute o comando:
+                        Com o Composer instalado, vá para o terminal, verifique se está na pasta do projeto que você clonou (caso não
+                        esteja, navegue até a pasta pelo terminal) e execute o comando:
                     </p>
 
                     <pre>
@@ -208,7 +208,7 @@
                     <h2>Estrutura de pastas</h2>
 
                     <p>
-                        Abra a pasta do seu projeto ou, se preferir, de um comando no terminal para listar as pastas. <br>
+                        Abra a pasta do seu projeto ou, se preferir, dê um comando no terminal para listar as pastas. <br>
                         Você verá que existe uma estrutura de pastas e alguns arquivos. Essa estrutura é o que normalmente seguimos 
                         quando vamos desenlvover um projeto em PHP.
 
@@ -243,16 +243,16 @@
                             </li>
 
                             <li>
-                                Pasta public: É a pasta de acesso publico do projeto. <br> 
+                                Pasta public: É a pasta de acesso público do projeto. <br>
                                 Por motivos de segurança, quando o servidor 
-                                acessar a aplicação ele terá acesso a pasta public, onde tem um arquivo index.php 
+                                acessar a aplicação ele terá acesso somente à pasta public, onde tem um arquivo index.php
                                 que vai carregar os demais arquivos do projeto que estão fora da pasta. Com isso, o código e os 
                                 dados senssíveis, como acesso ao banco de dados, ficam protegidos.(arquivos de css, js e img costumam ficar 
                                 aqui também);
                             </li>
 
                             <li>
-                                Pasta resource: onde colocarmos geralmente os arquivos que não são .php e, no nosso caso, 
+                                Pasta resource: onde colocamos geralmente os arquivos que não são .php e, no nosso caso,
                                 estão os arquivos HTML.
                             </li>
 
@@ -262,7 +262,7 @@
                             </li>
 
                             <li>
-                                Pasta vendor: A pasta onde o Composer instala as dependecias do projeto, ou seja, onde ele instala as 
+                                Pasta vendor: A pasta onde o Composer instala as dependências do projeto, ou seja, onde ele instala as
                                 bibliotecas de terceiros;
                             </li>
                         </ul>
@@ -279,14 +279,14 @@
                     <h2>MVC</h2>
 
                     <p>
-                        Com a estrutura do projeto pronta vamos entender um pouco sobre MVC(Model, View e Controller).<br> 
+                        Com a estrutura do projeto pronta vamos entender um pouco sobre MVC (Model, View e Controller).<br>
                         O MVC é um padrão de arquitetura de software, ou seja, é um modo de separamos e estruturamos o código da nossa 
                         aplicação e no caso do MVC nós separamos o código em Models, Views e Controllers.
                     </p>
 
                     <p>
                         Os Models são os arquivos que contém as nossas entidades, ou seja, as classes da nossa aplicação como, 
-                        por exemplo, a classe Tarefa da nossa aplicação TO-DO, e também fica toda a lógica de manipularmos os dados 
+                        por exemplo, a classe Tarefa da nossa aplicação TO-DO, e também onde fica toda a lógica de manipularmos os dados
                         dos objetos dessa classe no banco de dados.
                     </p>
 
