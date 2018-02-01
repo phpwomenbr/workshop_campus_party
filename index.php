@@ -35,20 +35,14 @@
                         </li>
 
                         <li class="list-group-item">
-                            <a href="banco_de_dados.php" class="d-block" title="Banco de dados">
-                                4 - Banco de dados
+                            <a href="estrutura.php" class="d-block" title="Estruturando o seu projeto">
+                                4 - Estruturando o projeto
                             </a>
                         </li>
 
                         <li class="list-group-item">
-                            <a href="estrutura.php" class="d-block" title="Estruturando o seu projeto">
-                                5 - Estruturando o projeto
-                            </a>
-                        </li>
-
-                        <li class="list-group-item">
-                            <a href="estrutura.php" class="d-block" title="Estruturando o seu projeto">
-                                6 - Entendendo a aplicação
+                            <a href="aplicacao.php" class="d-block" title="Trabalhando na aplicacao">
+                                6 - Trabalhando na aplicacao
                             </a>
                         </li>
                     </ul>

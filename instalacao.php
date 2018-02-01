@@ -98,8 +98,6 @@
                     <p>
                         Dessa forma ao acessar o endereço 'localhost:8080' em seu navegador sua página será mostrada.
                     </p>
-
-                    <img src="img/img-tela-1.png" class="img-fluid" title="Imagem do navegador mostrando as informações do PHP" alt="Imagem do navegador mostrando as informações do PHP">
                 </div><!-- .col -->
             </div><!-- .row -->
         </div><!-- .container -->
@@ -109,7 +107,7 @@
         <div class="container">
             <div class="row justify-content-md-center">
                 <div class="col col-md-8">
-                    <a href="/" class="float-left" title="volta">indíce</a>
+                    <a href="index.php" class="float-left" title="volta">indíce</a>
                     <a href="programando_em_php.php" class="float-right" title="próximo">próximo</a>
                 </div><!-- .col -->
             </div><!-- .row -->

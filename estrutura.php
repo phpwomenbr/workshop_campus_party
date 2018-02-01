@@ -310,8 +310,8 @@
         <div class="container">
             <div class="row justify-content-md-center">
                 <div class="col col-md-8">
-                    <a href="programacao_php.php" class="float-left" title="volta">voltar</a>
-                    <a href="aplicativo_to_do.php" class="float-right" title="próximo">próximo</a>
+                    <a href="orientacao_a_objetos.php" class="float-left" title="volta">voltar</a>
+                    <a href="aplicacao.php" class="float-right" title="próximo">próximo</a>
                 </div><!-- .col -->
             </div><!-- .row -->
         </div><!-- .container -->

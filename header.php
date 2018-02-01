@@ -22,7 +22,7 @@
                             <div id="middle">
                                 <div id="inner">
 
-                                    <a href="/" class="d-block" title="home"><h1 class="d-block text-white">Workshop PHPWomenBR</h1></a>
+                                    <a href="index.php" class="d-block" title="home"><h1 class="d-block text-white">Workshop PHPWomenBR</h1></a>
 
                                 </div><!-- .inner -->
                             </div><!-- .middle -->
