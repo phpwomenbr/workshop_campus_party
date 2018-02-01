@@ -26,8 +26,10 @@
                             <h3>Editor de código</h3>
                             <p>
                                 Assim como utilizamos programas como o Word para escrever documentos,
-                                também existem programas específicos que nos ajudam a digitar nossos códigos de programação
-                                que chamamos de editores de código. Abaixo seguem alguns editores:
+                                também existem programas específicos que nos ajudam a digitar nossos códigos de programação.
+                                Chamamos esses programas de editores de código.
+                                <br>
+                                Abaixo seguem alguns editores que você pode utilizar:
                                 <ul class="list-unstyled">
                                     <li><a href="https://code.visualstudio.com/" title="Visual Studio Code" target="_blank">Visual Studio Code</a></li>
                                     <li><a href="https://www.sublimetext.com/" title="Sublime" target="_blank">Sublime</a></li>

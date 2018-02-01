@@ -7,7 +7,7 @@
                     <h2>Introdução</h2>
 
                     <p>
-                        Neste Workshop você iremos passar pelos conceitos básicos da linguagem até 
+                        Neste Workshop você irá ver desde os conceitos básicos da linguagem até
                         como é o desenvolvimento de uma aplicação em PHP.                   
                     </p>
                 </div><!-- .col -->
@@ -42,7 +42,7 @@
 
                         <li class="list-group-item">
                             <a href="aplicacao.php" class="d-block" title="Trabalhando na aplicacao">
-                                6 - Trabalhando na aplicacao
+                                6 - Trabalhando na aplicação
                             </a>
                         </li>
                     </ul>
