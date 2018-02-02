@@ -5,7 +5,6 @@
             <div class="row justify-content-md-center">
                 <div class="col col-md-8">
                     <h2>Requisitos</h2>
-
                     <p>
                         O que é necessário para que você possa seguir o tutorial.                    
                     </p>
@@ -26,8 +25,10 @@
                             <h3>Editor de código</h3>
                             <p>
                                 Assim como utilizamos programas como o Word para escrever documentos,
-                                também existem programas específicos que nos ajudam a digitar nossos códigos de programação
-                                que chamamos de editores de código. Abaixo seguem alguns editores:
+                                também existem programas específicos que nos ajudam a digitar nossos códigos de programação.
+                                Chamamos esses programas de editores de código.
+                                <br>
+                                Abaixo seguem alguns editores que você pode utilizar:
                                 <ul class="list-unstyled">
                                     <li><a href="https://code.visualstudio.com/" title="Visual Studio Code" target="_blank">Visual Studio Code</a></li>
                                     <li><a href="https://www.sublimetext.com/" title="Sublime" target="_blank">Sublime</a></li>
@@ -59,11 +60,11 @@
                         O PHP tem diversos usos:
                         <ul>
                             <li>Coletar dados de um formulário;</li>
-                            <li>Para gerar páginas web com conteúdo dinâmico;</li>
-                            <li>Podemos gerar e ler arquivos como imagens;</li>
-                            <li>Mandar e enviar e-mails;</li>
-                            <li>Consulta em bancos de dados;</li>
-                            <li>Scripts para serem executados pelo computador;</li>
+                            <li>Gerar páginas web com conteúdo dinâmico;</li>
+                            <li>Gerar e ler arquivos como imagens;</li>
+                            <li>Enviar e-mails;</li>
+                            <li>Consultar bancos de dados;</li>
+                            <li>Criar scripts para serem executados pelo computador;</li>
                         </ul>
                     </p>
                 </div><!-- .col -->
@@ -90,11 +91,11 @@
         <div class="container">
             <div class="row justify-content-md-center">
                 <div class="col col-md-8">
-                    <h2>Nosso Hello World</h2>
+                    <h2>Hello World</h2>
 
                     <p>
-                        Vamos fazer nosso primeiro código PHP. </br>
-                        Abra no seu editor de código a página index.php, apague o código anterior 
+                        Hora de fazer seu primeiro código PHP. </br>
+                        Abra página index.php no seu editor, apague o código anterior
                         e coloque o código abaixo:
                     </p>
 
@@ -107,15 +108,15 @@
                     </pre>
 
                     <p>
-                        Salve o seu arquivo e atualize a sua página no navegador. <br> 
-                        Provavelmente você verá o seu primeiro
+                        Salve o seu arquivo e atualize a página no navegador. <br>
+                        Você deve ver seu primeiro
                         "Hello World".
                     </p>
 
                     <p>
                         Como mostrado acima, todo código PHP deve ser iniciado com a tag <strong>&lt;?php</strong>
-                        e quando queremos terminar de escrever em PHP, por exemplo, quando queremos voltar a escrever
-                        em HTML, informamos a tag de fechamento <strong>?&gt;</strong>
+                        e quando quiser terminar de escrever em PHP (por exemplo, quando quiser voltar a escrever
+                        em HTML) é só digitar a tag de fechamento <strong>?&gt;</strong>
                     </p>
                 </div><!-- .col -->
             </div><!-- .row -->
@@ -129,8 +130,8 @@
                     <h2>A função echo</h2>
 
                     <p>
-                        No exemplo anterior utilizamos uma função chamada echo(falaremos de funções mais tarde).
-                        A função echo mostra o valor passado a seguir para ela no navegador.
+                        No exemplo anterior você utilizou uma função chamada echo (falaremos de funções mais tarde).
+                        Essa função exibe no navegador aquilo que foi passada pra ela como parâmetro.
                     </p>
                 </div><!-- .col -->
             </div><!-- .row -->
@@ -144,9 +145,12 @@
                     <h2>Variáveis</h2>
 
                     <p>
-                       Variáveis são espaços reservados na memória e na programação é utilizada para guardarmos dados.
+                       Tecnicamente, variáveis são espaços reservados na memória que guardam dados temporariamente.
+                        De maneira simples, na programação em PHP, é como se você pegasse uma caixinha vazia, desse
+                        um nome a ela e colocasse algum dado ali. Então sempre que precisar daquele dado é só buscar
+                        na mesma caixinha. <br>
                        No PHP as variáveis são definidas por um nome precedido de <strong>$</strong>.</br>
-                       No exemplo abaixo criamos uma variávle chamada <strong>$nome</strong> que guarda o nome 'Ana':
+                       No exemplo abaixo foi criada uma variável chamada <strong>$nome</strong> que guarda o nome 'Ana':
                     </p>
 
                     <pre>
@@ -157,7 +161,7 @@
                     </pre>
 
                     <p>
-                       Pode além de texto podemos utiliza-las para guardar outros tipos de dados como números.
+                       Além de texto, você pode utilizar variáveis para guardar outros tipos de dados, como números.
                     </p>
 
                     <pre>
@@ -171,8 +175,8 @@
                     </pre>
 
                     <p>
-                       Nas variáveis nós podemos armazenar um valor no início e depois podemos trocar o valor
-                       durante o nosso código como mostra o exemplo a seguir:
+                        Você também pode armazenar um dado em uma variável no início do código e depois trocar esse
+                        valor por outro, como mostra o exemplo a seguir:
                     </p>
 
                     <pre>
@@ -195,9 +199,10 @@
                     <h2>Constantes</h2>
 
                     <p>
-                       Quando queremos que um valor não mude durante o nosso código utilizamos o que chamamos de constante.
-                       Para declararmos uma constante em nosso programa devemos utilizar a função define(falaremos de funções mais para frente)
-                       e seu nome é escrito em letras maiusculas e sem ser precedida de <strong>$</strong>.
+                       Se quiser que um valor não mude durante todo o seu código, você deve utilizar o que chamamos de constante.
+                        Para declarar uma constante no seu programa, você deve utilizar a função <strong>define</strong>
+                        (falaremos de funções mais para frente).
+                        Uma constante deve ter seu nome escrito em letras maiusculas e sem o <strong>$</strong>.
                     </p>
 
                     <pre>
@@ -219,10 +224,10 @@
                     <h2>Arrays</h2>
 
                     <p>
-                       Os arrays são utilizados quando queremos guardar grande quantidade de dados.
-                       Vamos pensar que queremos guardar em nosso programa os nomes das nossas cores favoritas.
-                       Se tentarmos guardar em uma variável o primeiro nome será sobrescrito pelo próximo nome,
-                       então ao invés de usar um variável podemos utilizar um array:
+                       Os arrays são utilizados para guardar uma grande quantidade de dados.
+                        Imagine que você quer guardar em seu programa os nomes de suas cores favoritas.
+                        Se tentar guardar em uma única variável, o primeiro nome será sobrescrito pelo próximo nome. <br>
+                       Então, ao invés de usar um variável pode ser utilizado um array:
                     </p>
 
                     <pre>
@@ -233,7 +238,7 @@
                     </pre>
 
                     <p>
-                       E então para acessar cada valor podemos fazer da seguinte forma:
+                       E para acessar cada valor é possível fazer da seguinte forma:
                     </p>
 
                     <pre>
@@ -247,16 +252,18 @@
                     </pre>
 
                     <p>
-                       Note que para acessar cada valor basta passarmos a posição em que cada valor está.
-                       Está posição nós chamamos de índice e repare que a contagem sempre começa no 
-                       <strong>0</strong> e não no <strong>1</strong>.
+                       Note que para acessar cada valor basta passar a posição em que cada valor está dentro do array.
+                       Esta posição é chamada de índice e a contagem sempre começa no <strong>0</strong> e não
+                        no <strong>1</strong>.
                     </p>
 
                     <p>
                        Você pode ter notado que as palavras 'Amarelo' e 'Azul' foram mostradas juntas no navegador.<br>
-                       Para dizer ao navegador que ele deve quebrar uma linha entre as palavras podemos usar uma tag HTML chamada
-                       <strong>&lt;br&gt;</strong> entre " " no final da função <strong>echo</strong> precedido de <strong>.</strong> 
-                       que no PHP faz a concatenação do valor da variável mais a tag <strong>&lt;br&gt;</strong>.
+                       Para dizer ao navegador que ele deve quebrar uma linha entre as palavras pode-se usar uma
+                        tag HTML chamada <strong>&lt;br&gt;</strong>.
+                        Você pode colocar essa tag entre <strong>" "</strong> no final da função
+                        <strong>echo</strong> precedida de <strong>.</strong>. <br>
+                        Dessa forma o PHP faz a concatenação do valor da variável mais a tag <strong>&lt;br&gt;</strong>.
                     </p>
 
                     <pre>
@@ -270,7 +277,7 @@
                     </pre>
 
                     <p>
-                       Nós também podemos criar nosso próprios índices e nesse caso chamamos de <strong>array associativo</strong>,
+                       Também é possível criar seu próprio índice. Nesse caso chamamos de <strong>array associativo</strong>,
                        veja abaixo:
                     </p>
 
@@ -293,9 +300,9 @@
                     <h2>if, else e else if</h2>
 
                     <p>
-                       Algumas instruções em nosso código, as vezes, só podem ser executadas se determinadas
-                       consições forem cumpridas e para isso o PHP possuí o que chamamos de estrutura de controle
-                       chamada de <strong>if</strong>. Veja abaixo:
+                       Às vezes algumas instruções no código só podem ser executadas se determinadas
+                        condições forem cumpridas e para isso o PHP possuí o que chamamos de <strong>estrutura de controle</strong>,
+                       o <strong>if</strong>. <br>Veja abaixo:
                     </p>
 
                     <pre>
@@ -311,13 +318,13 @@
 
                     <p>
                        No código acima a frase "Você já maior de idade!" só vai aparecer se a variável $idade tiver um
-                       valor guardado maior que 17. Podemos ler a instrução acima da seguinte forma: "Se $idade for maior que 17
+                       valor guardado maior que 17. É possível ler a instrução acima da seguinte forma: "Se $idade for maior que 17
                        então execute o que estiver dentro das { }".
                     </p>
 
                     <p>
-                       Podemos fazer vários tipos de verificação utilizando o que chamamos de operador lógico.
-                       Veja alguns operadores:
+                        Você pode fazer vários tipos de verificação utilizando um <strong>operador lógico</strong>.
+                       Veja alguns desses operadores:
 
                        <ul>
                             <li>$idade == 17 -> Verifica se o valor da variável é igual à 17</li>
@@ -331,8 +338,8 @@
                     </p>
 
                     <p>
-                       E se quisermos mostrar uma frase na tela para quando o valor for menor que 17? Nesse caso,
-                       nós utilizamos o <strong>else</strong> que só será executado casa a verificação feita pelo
+                       E se quiser mostrar uma frase na tela para quando o valor for menor que 17? Nesse caso,
+                       utiliza-se a expressão <strong>else</strong>,  que só será executada caso a verificação feita pelo
                        <strong>if</strong> não seja verdadeira.
                     </p>
 
@@ -350,7 +357,7 @@
                     </pre>
 
                     <p>
-                       E se você precisar realizar mais de uma verificação podemmos utilizar o <strong>if else</strong>.
+                       E se você precisar realizar mais de uma verificação podemmos utilizar o <strong>else if</strong>.
                     </p>
 
                     <pre>
@@ -369,9 +376,9 @@
                     </pre>
 
                     <p>
-                       Repare no operador <strong>&&</strong> nós lemos ele como 'e' ele verifica se as duas verificações são verdadeiras.
-                       Nós podemos utilizar também o operador <strong>||</strong> que lemos como 'ou' e nesse caso ele verifica
-                       se uma ou outra verficação é verdadeira.
+                       Repare no operador <strong>&&</strong>.  É lido como 'e' e ele verifica se as duas afirmações são verdadeiras.
+                       Você pode utilizar também o operador <strong>||</strong> que é lido como 'ou' e nesse caso ele verifica
+                        se uma <strong>ou</strong> outra afirmação é verdadeira.
                     </p>
 
                     <pre>
@@ -398,9 +405,9 @@
                     <h2>while, for e foreach</h2>
 
                     <p>
-                       Algumas vezes queremos que uma parte do nosso código se repita uma certa quantidade de vezes.
-                       Para isso o PHP possuí o que chamamos de estruturas de repetição e vamos começar apresentando
-                       o <strong>while</strong> Veja o código a seguir:
+                       Algumas vezes você pode querer que uma parte do código se repita uma certa quantidade de vezes.
+                        Para isso o PHP possuí <strong>estruturas de repetição</strong> e vamos começar apresentando
+                       o <strong>while</strong>. <br>Veja o código a seguir:
                     </p>
 
                     <pre>
@@ -416,12 +423,12 @@
                     </pre>
 
                     <p>
-                       Se você excutar o código acima verá que as instruções que estão dentro das { } será executadas
-                       até que a variável número tenha um valor maior que 10.
+                       Se você excutar o código acima verá que as instruções que estão dentro das { } serão executadas
+                       até que a variável $número tenha um valor maior que 10.
                     </p>
 
                     <p>
-                       Esse mesmo código podemos fazer com o <strong>for</strong>. Veja:
+                       É possível fazer esse mesmo código com o <strong>for</strong>. Veja:
                     </p>
 
                     <pre>
@@ -436,14 +443,15 @@
                     <p>
                        A diferença do <strong>for</strong> para o <strong>while</strong> é que a soma da variável $numero é 
                        feita diretamente dentro do <strong>for</strong>.
-                       Com o tempo você verá que as vezes é melhor utilizar o <strong>for</strong> para algumas situações
-                        ou o <strong>while</strong>.<br>
-                       Repare também que a expressão <strong>$numero++</strong> do <strong>for</strong> nada mais é que a expressão 
-                       <strong>$numero = $numero + 1</strong> do <strong>while</strong> reduzida.
+                       Com o tempo você verá que às vezes é melhor utilizar o <strong>for</strong> para algumas situações
+                        e o <strong>while</strong> para outras.<br>
+                       Repare também que a expressão <strong>$numero++</strong> do <strong>for</strong> nada mais é que a expressão reduzida
+                       <strong>$numero = $numero + 1</strong> do <strong>while</strong>.
                     </p>
 
                     <p>
-                       Já o <strong>foreach</strong> é utilizado mais para manipularmos os valores de arrays e objetos(falaremos mais tarde sobre objetos).
+                       Já o <strong>foreach</strong> é utilizado mais para manipular os valores de arrays e objetos
+                        (falaremos mais tarde sobre objetos).
                        Neste momento não vamos nos aprofundar muito nele, mas segue um exemplo de utilização:
                     </p>
 
@@ -469,10 +477,11 @@
                     <h2>Funções</h2>
 
                     <p>
-                       Algumas vezes queremos escrevemos um código e queremos reutiliza-lo em outras partes do nosso programa.
+                       Algumas vezes queremos escrever um código e reutilizá-lo em outras partes do nosso programa.
                        Para isso podemos utilizar o que chamamos de <strong>funções</strong>.</br>
-                       Uma <strong>função</strong> é um pedaço de código que é encapsulado em uma estrutura e que recebe um conjunto de valores 
-                       que chamamos de parâmetros, os processa e retorna o seu resultado. Veja um exemplo:
+                       Uma <strong>função</strong> é um pedaço de código que é encapsulado em uma estrutura e que
+                        recebe um conjunto de valores chamados de parâmetros, os processa e retorna o seu resultado.
+                        Veja um exemplo:
                     </p>
 
                     <pre>
@@ -491,8 +500,9 @@
 
                     <p>
                        No código acima criamos uma <strong>função</strong> com o nome de 'somaDeNumeros' e dentro colocamos
-                       a instrução para somar dois números que ela receber e retornar o resultado. Depois basta chamarmos a função
-                       pelo seu nome em qualquer parte do nosso código e passarmos os valores para serem somados.
+                       a instrução para somar dois números que ela recebe e retornar o resultado.
+                        Depois basta chamarmos a função pelo nome em qualquer parte do código e
+                        passarmos os valores para serem somados.
                     </p>
                 </div><!-- .col -->
             </div><!-- .row -->
