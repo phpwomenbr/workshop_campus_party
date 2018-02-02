@@ -1,4 +1,4 @@
-<?php include("header.php"); ?>
+<?php include "header.php";?>
 
     <section class="require">
         <div class="container">
@@ -7,7 +7,7 @@
                     <h2>Requisitos</h2>
 
                     <p>
-                        O que é necessário para que você possa seguir o tutorial.                    
+                        O que é necessário para que você possa seguir o tutorial.
                     </p>
                 </div><!-- .col -->
             </div><!-- .row -->
@@ -84,19 +84,18 @@
 
                     <p>
                         No PHP, geralmente, nós utilizamos um arquivo para cada classe e seu nome deve ser o nome da classe começando
-                        com letra maiuscula. <br> 
+                        com letra maiuscula. <br>
                         Para exemplificar vamos criar uma classe Cachorro que ficará no arquivo Cachorro.php:
                     </p>
 
-                    <pre>
-                        <code>
-                        &lt;?php
-                            class Cachorro 
-                            {
+                    <?php highlight_string(<<<'PHP'
+<?php
+class Cachorro
+{
 
-                            }
-                        </code>
-                    </pre>
+}
+PHP
+);?>
                 </div><!-- .col -->
             </div><!-- .row -->
         </div><!-- .container -->
@@ -115,19 +114,18 @@
                         Para criarmos um atributo para a classe nós declaramos uma váriavel geralmente com o nome do atributo:
                     </p>
 
-                    <pre>
-                        <code>
-                        &lt;?php
-                            class Cliente 
-                            {
-                                $nome;
-                                $idade;
-                                $raca;
-                                $sexo;
-                                $tamanho;
-                            }
-                        </code>
-                    </pre>
+<?php highlight_string(<<<'PHP'
+<?php
+class Cachorro
+{
+    public $nome;
+    public $idade;
+    public $raca;
+    public $sexo;
+    public $tamanho;
+}
+PHP
+);?>
                 </div><!-- .col -->
             </div><!-- .row -->
         </div><!-- .container -->
@@ -141,28 +139,26 @@
 
                     <p>
                         Os métodos da nossa classe são os comportamentos que todos os objetos da classe possuem. Por exemplo,
-                        geralmente os cachorros costumam latir e esse comportamento pode ser um método da nossa classe Cachorro.<br> 
-                        Para criamos um método escrevemos uma função dentro da classe com o nome do comportamento e o que ele deve 
+                        geralmente os cachorros costumam latir e esse comportamento pode ser um método da nossa classe Cachorro.<br>
+                        Para criamos um método escrevemos uma função dentro da classe com o nome do comportamento e o que ele deve
                         fazer quando o chamarmos:
                     </p>
+                    <?php highlight_string(<<<'PHP'
+<?php
+class Cachorro
+{
+    public $nome;
+    public $idade;
+    public $raca;
+    public $sexo;
+    public $tamanho;
 
-                    <pre>
-                        <code>
-                        &lt;?php
-                            class Cliente 
-                            {
-                                $nome;
-                                $idade;
-                                $raca;
-                                $sexo;
-                                $tamanho;
-
-                                function latir() {
-                                    return echo "au au au";
-                                }
-                            }
-                        </code>
-                    </pre>
+    public function latir(): string {
+        return "au au au";
+    }
+}
+PHP
+);?>
                 </div><!-- .col -->
             </div><!-- .row -->
         </div><!-- .container -->
@@ -175,33 +171,31 @@
                     <h2>Objeto</h2>
 
                     <p>
-                        Agora que temos a classe, vamos criar o objeto. Crie outro arquivo na mesma pasta em que 
+                        Agora que temos a classe, vamos criar o objeto. Crie outro arquivo na mesma pasta em que
                         você criou o Cachorro.php e vamos chama-lo de index.php. Nele vamos chamar o arquivo que
                         tem a nossa classe e vamos criar um objeto:
                     </p>
+<?php highlight_string(<<<'PHP'
+<?php
+require("Cachorro.php"); // Incluí o Cachorro.php
 
-                    <pre>
-                        <code>
-                        &lt;?php
-                            require("Cachorro.php"); // Incluí o Cachorro.php
+$meu_cachorro = new Cachorro;
 
-                            $meu_cachorro = new Cachorro;
+$meu_cachorro->nome = "Duquesa";
+echo $meu_cachorro->nome;
 
-                            $meu_cachorro->nome = "Duquesa";
-                            echo $meu_cachorro->nome;
+$meu_cachorro->idade = 5;
+echo $meu_cachorro->idade;
 
-                            $meu_cachorro->idade = 5;
-                            echo $meu_cachorro->idade;
+$meu_cachorro->sexo = "fêmea";
+echo $meu_cachorro->sexo;
 
-                            $meu_cachorro->sexo = "fêmea";
-                            echo $meu_cachorro->sexo;
-
-                            $meu_cachorro->latir(); // Deve mostrar 'au au au'
-                        </code>
-                    </pre>
+echo $meu_cachorro->latir(); // Deve mostrar 'au au au'
+PHP
+);?>
 
                     <p>
-                        No código acima utilizamos a função 'require' para incluirmos o arquivo com a nossa classe Cachorro no arquivo index.php 
+                        No código acima utilizamos a função 'require' para incluirmos o arquivo com a nossa classe Cachorro no arquivo index.php
                         e assim podermos criar um objeto com ela.
 
                     </p>
@@ -213,8 +207,8 @@
                     </p>
 
                     <p>
-                        Uma vez que temos o objeto criado podemos atribuir valores para os atributos desse objeto, então nós  
-                        escrevemos o nome da variável que esta quardando o objeto, seguida de uma seta 
+                        Uma vez que temos o objeto criado podemos atribuir valores para os atributos desse objeto, então nós
+                        escrevemos o nome da variável que esta quardando o objeto, seguida de uma seta
                         e depois o nome do atributo. Assim atribuímos um valor para essa variável.<br>
                         <strong>$nome_varivel->nome_atributo = valor</strong>. No nosso caso, '$meu_cachorro->nome = "Duquesa"'
 
@@ -241,54 +235,48 @@
                         Por exemplo, se declaramos um atributo de uma classe como <strong>private</strong>
                         esse atributo não poderá mais ser acessado diretamente pelo objeto.
                     </p>
+<?php highlight_string(<<<'PHP'
+<?php
+class Cachorro
+{
+    private $nome;
 
-                    <pre>
-                        <code>
-                        &lt;?php
-                            class Cliente 
-                            {
-                                private $nome;
+    function latir(): string {
+        return "au au au";
+    }
+}
 
-                                function latir() {
-                                    return echo "au au au";
-                                }
-                            }
-
-                            $meu_cachorro->nome = "Duquesa"; // Gera erro
-                        </code>
-                    </pre>
-
+$meu_cachorro->nome = "Duquesa"; // Gera erro
+PHP
+);?>
                     <p>
                         Isso é muito utilizado para proteger e garantir os dados dos objetos de uma classe. No caso acima, para acessarmos o atributo
                         nome do objeto da classe Cachorro, devemos criar um método para atribuir um valor a propriedade e para retornar o valor desta propriedade.
                         Costumamos chamar esses métodos respectivamente de getters e setters.
                     </p>
+<?php highlight_string(<<<'PHP'
+<?php
+class Cachorro
+{
+    private $nome;
 
-                    <pre>
-                        <code>
-                        &lt;?php
-                            class Cliente 
-                            {
-                                private $nome;
+    function setNome(string $nome) {
+        $this->nome = $nome;
+    }
 
-                                function setNome($nome) {
-                                    $this->nome = $nome;
-                                }
+    function getNome(): string {
+        return $this->nome;
+    }
 
-                                function setNome() {
-                                    return $this->nome;
-                                }
+    function latir(): string {
+        return "au au au";
+    }
+}
 
-                                function latir() {
-                                    return echo "au au au";
-                                }
-                            }
-
-                            $meu_cachorro->setNome("Duquesa");
-                            echo $meu_cachorro->getNome();
-                        </code>
-                    </pre>
-
+$meu_cachorro->setNome("Duquesa");
+echo $meu_cachorro->getNome();
+PHP
+);?>
                     <p>
                         Para acessarmos o atributo nome que está como privado nós criamos um método chamado setNome, que recebe um nome e o guarda
                         no atributo nome do objeto, e o getNome que retorna o valor do atributo nome do objeto.
@@ -331,4 +319,4 @@
         </div><!-- .container -->
     </section>
 
-<?php include("footer.php"); ?>
+<?php include "footer.php";?>

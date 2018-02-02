@@ -117,3 +117,10 @@ footer {
   padding: 20px 0;
 }
 
+code{
+    padding: 8px;
+    display: block;
+    border: 1px solid #CCC;
+    background-color: #E9e9e9;
+    margin: 32px 0;
+}
